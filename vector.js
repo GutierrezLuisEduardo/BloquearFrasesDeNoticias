@@ -61,3 +61,5 @@ window.forbiddenPhrases = [
     "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI",
     "Gertrudis Bocanegra", "Red Bull"
 ];
+
+window.dispatchEvent(new Event('forbiddenPhrasesLoaded'));
