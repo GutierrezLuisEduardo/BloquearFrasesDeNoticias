@@ -59,7 +59,7 @@ window.forbiddenPhrases = [
     "Beca Rita Cetina", "Mujeres que Luchan", "femicidios", "feminicidios", "Gonzalo Guerrero", "Limpieza profunda", "Snack ideal", "videojuegos",
     "eliminar toxinas", "exceso de grasa acumulada", "hígado graso", "este alimento", "poderosa mezcla", "bálsamo casero", "Yoltlajtoli",
     "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI",
-    "Gertrudis Bocanegra", "Red Bull"
+    "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre"
 ];
 
 window.dispatchEvent(new Event('forbiddenPhrasesLoaded'));
