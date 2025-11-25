@@ -11,6 +11,7 @@ window.forbiddenPhrases = [
     "Rayados", "Barça", "Lamine", "Lamine Yamal", "Camp Nou", "futbol", "NBA", "selección mexicana", "América femenil",
     "Fórmula 1", "F1", "fútbol", "Chicharito", "Liga MX", "torneo de", "Liga de", "Premier League", "Yankees", "Marlins", "Mets",
     "Luis Fernando Tena", "Chiefs", "Ferrari", "escudería", "Clausura 2026", "Clausura 2025", "Patriots", "Bengals", "Mazatlán FC",
+    "Neymar Jr.", "La Liga", "Mundial Femenil", "Eurocopa", "Baseball", 
     // Farándula
     "Ibai", "Christian Nodal", "Ángela Aguilar", "Shakira", "Maluma", "Diego Cocca", "Nodal", "ángela aguilar", "Aguilar",
     "Ángela Aguilar", "Aldo de Nigris", "Poncho de Nigris", "Kate del castillo", "Emiliano Aguilar", "familia Aguilar",
@@ -34,12 +35,14 @@ window.forbiddenPhrases = [
     "Bárbara de Regil", "Ricardo Peralta", "Karen Barrera", "Cazzu", "Franco Escamilla", "Ivonne Montero", "Yeri Mua",
     "Lapizito", "Luis Miguel", "Alana", "Adal Ramones", "Yordi Rosado", "Juan Collado", "Yadhira Carrillo", "Ancelotti", "Neymar",
     "Eugenio Derbez","Aislinn Derbez", "Iñárritu", "Tom Cruise", "Chabelo", "Gabriela Michel", "The Hives",
+     "Beyoncé", "Selena Gomez", "Kim Kardashian", "Will Smith", "Drake",
     // Problemas sociales y plataformas
     "Spotify", "Cinemex", "Tiktok", "HBO Max", "Disney", "TV Azteca",
   
     // Empresas
     "Steam",
     // Producciones audiovisuales
+    "Juego de Tronos", "Stranger Things", "Breaking Bad", "Black Mirror",
     "LCDLF", "LCDF", "TUDN", "Pixar", "La Casa de los Famosos", "La Academia",
     "Harry Potter", "MasterChef", "Imagen Televisión", "Las Estrellas", "LatinUS", "LCDLFMX", "La Más Draga",
     "Chavo del 8", "Sale el sol", "Granja VIP", "Exatlón", "la mañanera", "Grammy", "Miss Universo",
@@ -59,7 +62,7 @@ window.forbiddenPhrases = [
     "Beca Rita Cetina", "Mujeres que Luchan", "femicidios", "feminicidios", "Gonzalo Guerrero", "Limpieza profunda", "Snack ideal", "videojuegos",
     "eliminar toxinas", "exceso de grasa acumulada", "hígado graso", "este alimento", "poderosa mezcla", "bálsamo casero", "Yoltlajtoli",
     "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI",
-    "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre"
+    "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento", "autoayuda", "sostenibilidad", "salud holística"
 ];
 
 window.dispatchEvent(new Event('forbiddenPhrasesLoaded'));
