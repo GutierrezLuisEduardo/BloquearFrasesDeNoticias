@@ -36,7 +36,7 @@ window.forbiddenPhrases = [
     "Lapizito", "Luis Miguel", "Alana", "Adal Ramones", "Yordi Rosado", "Juan Collado", "Yadhira Carrillo", "Ancelotti", "Neymar",
     "Eugenio Derbez","Aislinn Derbez", "Iñárritu", "Tom Cruise", "Chabelo", "Gabriela Michel", "The Hives", "Roberto Palazuelos",
     "Beyoncé", "Selena Gomez", "Kim Kardashian", "Will Smith", "Drake", "Jennifer López", "Jennifer Lopez", "Alejandro Fernández",
-    "Eminem", "Slim Shady",
+    "Eminem", "Slim Shady", "Martha Higareda", "J Balvin",
     // Plataformas sociales y plataformas
     "Spotify", "Cinemex", "Tiktok", "HBO Max", "Disney", "TV Azteca", "PUBG", "Hitman",
   
