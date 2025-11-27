@@ -11,7 +11,9 @@ window.forbiddenPhrases = [
     "Rayados", "Barça", "Lamine", "Lamine Yamal", "Camp Nou", "futbol", "NBA", "selección mexicana", "América femenil",
     "Fórmula 1", "F1", "fútbol", "Chicharito", "Liga MX", "torneo de", "Liga de", "Premier League", "Yankees", "Marlins", "Mets",
     "Luis Fernando Tena", "Chiefs", "Ferrari", "escudería", "Clausura 2026", "Clausura 2025", "Patriots", "Bengals", "Mazatlán FC",
-    "Neymar Jr.", "La Liga", "Mundial Femenil", "Eurocopa", "Baseball", "Elías Montiel", "Real Oviedo",
+    "Neymar Jr.", "La Liga", "Mundial Femenil", "Eurocopa", "Baseball", "Elías Montiel", "Real Oviedo", "Flamengo", "River Plate", "Bayer Leverkusen",
+    "Diablito Echeverri", "Los Pumas", "La Libertadores", "Palmeiras", "Marcelo Gallardo", "Pity Martínez", "Liverpoll", "Mac Allister", "Champions",
+    "Cholo Simeone", "Bielsa", "Fernando Gago", "Julián Álvarez",
     // Farándula
     "Ibai", "Christian Nodal", "Ángela Aguilar", "Shakira", "Maluma", "Diego Cocca", "Nodal", "ángela aguilar", "Aguilar",
     "Ángela Aguilar", "Aldo de Nigris", "Poncho de Nigris", "Kate del castillo", "Emiliano Aguilar", "familia Aguilar",
@@ -30,13 +32,14 @@ window.forbiddenPhrases = [
     "Adamari López", "Pokémon", "Katy Perry", "Wendy Guevara", "Fernando Colunga", "Silvia Pinal", "Angélica Vale",
     "Pepe Aguilar", "David Faitelson", "Chumel Torres", "Fofo Márquez", "Esteban Macías", "Vanessa Guzmán", "Fuerza Regida",
     "Carlos Rivera", "Jason Momoa", "Alfredo Adame", "Adame", "Ozzy Osbourne", "Rocío Robles", "Rosalía", "Javier Alarcón",
-    "Mujer Luna Bella", "Gomita", "Gala Montes", "Adrián Marcelo", "Brenda Bezares", "Rocío Durcal", "Zague",
-    "Mario Bezares", "Venga la Alegría", "Maryfer Centeno", "Mr Doctor", "Verástegui", "Laura Flores", "Lalo Salazar",
+    "Mujer Luna Bella", "Gomita", "Gala Montes", "Adrián Marcelo", "Brenda Bezares", "Rocío Durcal", "Zague", "Elizabeth Olsen",
+    "Mario Bezares", "Venga la Alegría", "Maryfer Centeno", "Mr Doctor", "Verástegui", "Laura Flores", "Lalo Salazar", "Elton John",
     "Bárbara de Regil", "Ricardo Peralta", "Karen Barrera", "Cazzu", "Franco Escamilla", "Ivonne Montero", "Yeri Mua",
     "Lapizito", "Luis Miguel", "Alana", "Adal Ramones", "Yordi Rosado", "Juan Collado", "Yadhira Carrillo", "Ancelotti", "Neymar",
     "Eugenio Derbez","Aislinn Derbez", "Iñárritu", "Tom Cruise", "Chabelo", "Gabriela Michel", "The Hives", "Roberto Palazuelos",
     "Beyoncé", "Selena Gomez", "Kim Kardashian", "Will Smith", "Drake", "Jennifer López", "Jennifer Lopez", "Alejandro Fernández",
-    "Eminem", "Slim Shady", "Martha Higareda", "J Balvin", "Scarlett Johansson",
+    "Eminem", "Slim Shady", "Martha Higareda", "J Balvin", "Scarlett Johansson", "Bellakath", "Johnny Depp", "China Suárez",
+    "Julieta Poggio","Moria Casán",
     // Plataformas sociales y plataformas
     "Spotify", "Cinemex", "Tiktok", "HBO Max", "Disney", "TV Azteca", "PUBG", "Hitman",
   
@@ -44,7 +47,7 @@ window.forbiddenPhrases = [
     "Steam",
     // Producciones audiovisuales
     "Juego de Tronos", "Stranger Things", "Breaking Bad", "Black Mirror", "Genshin Impact", "Assasin's Creed",
-    "LCDLF", "LCDF", "TUDN", "Pixar", "La Casa de los Famosos", "La Academia", "Ubisoft",
+    "LCDLF", "LCDF", "TUDN", "Pixar", "La Casa de los Famosos", "La Academia", "Ubisoft", "The Witcher", "Fatal Fury", "WWE",
     "Harry Potter", "MasterChef", "Imagen Televisión", "Las Estrellas", "LatinUS", "LCDLFMX", "La Más Draga",
     "Chavo del 8", "Sale el sol", "Granja VIP", "Exatlón", "la mañanera", "Grammy", "Miss Universo",
     // Frases/palabras molestas
@@ -63,7 +66,8 @@ window.forbiddenPhrases = [
     "Beca Rita Cetina", "Mujeres que Luchan", "femicidios", "feminicidios", "Gonzalo Guerrero", "Limpieza profunda", "Snack ideal", "videojuegos", "ejercicios fáciles",
     "eliminar toxinas", "exceso de grasa acumulada", "hígado graso", "este alimento", "poderosa mezcla", "bálsamo casero", "Yoltlajtoli", "25N:", "25N?", "Jóvenes Escribiendo el futuro",
     "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI", "violencia contra la mujer",
-    "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento", "autoayuda", "sostenibilidad", "salud holística"
+    "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento", "autoayuda", "sostenibilidad", "salud holística",
+    "antioxidante", "limpia los riñones", "limpia los dientes", "rímel"
 ];
 
 window.dispatchEvent(new Event('forbiddenPhrasesLoaded'));
