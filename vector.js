@@ -39,7 +39,7 @@ window.forbiddenPhrases = [
     "Eugenio Derbez","Aislinn Derbez", "Iñárritu", "Tom Cruise", "Chabelo", "Gabriela Michel", "The Hives", "Roberto Palazuelos",
     "Beyoncé", "Selena Gomez", "Kim Kardashian", "Will Smith", "Drake", "Jennifer López", "Jennifer Lopez", "Alejandro Fernández",
     "Eminem", "Slim Shady", "Martha Higareda", "J Balvin", "Scarlett Johansson", "Bellakath", "Johnny Depp", "China Suárez",
-    "Julieta Poggio","Moria Casán",
+    "Julieta Poggio","Moria Casán", "De Nigris",
     // Plataformas sociales y plataformas
     "Spotify", "Cinemex", "Tiktok", "HBO Max", "Disney", "TV Azteca", "PUBG", "Hitman",
   
@@ -67,7 +67,8 @@ window.forbiddenPhrases = [
     "eliminar toxinas", "exceso de grasa acumulada", "hígado graso", "este alimento", "poderosa mezcla", "bálsamo casero", "Yoltlajtoli", "25N:", "25N?", "Jóvenes Escribiendo el futuro",
     "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI", "violencia contra la mujer",
     "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento", "autoayuda", "sostenibilidad", "salud holística",
-    "antioxidante", "limpia los riñones", "limpia los dientes", "rímel"
+    "antioxidante", "limpia los riñones", "limpia los dientes", "rímel", "según un experto", "según expertos" ,"según los expertos", "combatir el frío", "truco de cocina", "mejores consejos", "vitamina B12", "según un especialista"
+    "según especialistas", "según los "
 ];
 
 window.dispatchEvent(new Event('forbiddenPhrasesLoaded'));
