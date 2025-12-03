@@ -1,4 +1,4 @@
-        window.forbiddenPhrases = [
+window.forbiddenPhrases = [
     // Deportes
     "Marion Reimers", "Santos Laguna", "Leagues Cup", "Champions League", "Águilas del América", "Pacquiao", "Selección de México",
     "Cruz Azul", "Allan Saint-Maximim", "América vs", "Grand Prix", "Javier Aguirre", "octavos de final", "cuartos de final", "semifinal",
