@@ -67,7 +67,7 @@
     "eliminar toxinas", "exceso de grasa acumulada", "hígado graso", "este alimento", "poderosa mezcla", "bálsamo casero", "Yoltlajtoli", "25N:", "25N?", "Jóvenes Escribiendo el futuro",
     "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI", "violencia contra la mujer",
     "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento", "autoayuda", "sostenibilidad", "salud holística",
-    "antioxidante", "limpia los riñones", "limpia los dientes", "rímel", "según un experto", "según expertos" ,"según los expertos", "combatir el frío", "truco de cocina", "mejores consejos", "vitamina B12", "según un especialista"
+    "antioxidante", "limpia los riñones", "limpia los dientes", "rímel", "según un experto", "según expertos" ,"según los expertos", "combatir el frío", "truco de cocina", "mejores consejos", "vitamina B12", "según un especialista",
     "según especialistas", "según los ", "REVIEW |", "conseguir boletos", "K-dramas", "licuado de ", "destapar arterias", "destapar las arterias", "deliciosa", "delicioso", "receta especial", "Filarmónica"
 ];
 
