@@ -1,4 +1,4 @@
-window.forbiddenPhrases = [
+        window.forbiddenPhrases = [
     // Deportes
     "Marion Reimers", "Santos Laguna", "Leagues Cup", "Champions League", "Águilas del América", "Pacquiao", "Selección de México",
     "Cruz Azul", "Allan Saint-Maximim", "América vs", "Grand Prix", "Javier Aguirre", "octavos de final", "cuartos de final", "semifinal",
@@ -13,7 +13,7 @@ window.forbiddenPhrases = [
     "Luis Fernando Tena", "Chiefs", "Ferrari", "escudería", "Clausura 2026", "Clausura 2025", "Patriots", "Bengals", "Mazatlán FC",
     "Neymar Jr.", "La Liga", "Mundial Femenil", "Eurocopa", "Baseball", "Elías Montiel", "Real Oviedo", "Flamengo", "River Plate", "Bayer Leverkusen",
     "Diablito Echeverri", "Los Pumas", "La Libertadores", "Palmeiras", "Marcelo Gallardo", "Pity Martínez", "Liverpoll", "Mac Allister", "Champions",
-    "Cholo Simeone", "Bielsa", "Fernando Gago", "Julián Álvarez",
+    "Cholo Simeone", "Bielsa", "Fernando Gago", "Julián Álvarez", "Randy Arozarena", "Kang Tae Oh",
     // Farándula
     "Ibai", "Christian Nodal", "Ángela Aguilar", "Shakira", "Maluma", "Diego Cocca", "Nodal", "ángela aguilar", "Aguilar",
     "Ángela Aguilar", "Aldo de Nigris", "Poncho de Nigris", "Kate del castillo", "Emiliano Aguilar", "familia Aguilar",
@@ -59,7 +59,7 @@ window.forbiddenPhrases = [
     "Whatsapp", "romance", "moda", "K-Pop", "iPhone", "Nintendo", "Mario Bros", "red flag", "secreto natural", "toque navideño", "autohipnosis",
     "Fortnite", "Xbox", "Bienestar", "Según la IA", "calidad del aire", "Remedios caseros", "té de", "receta de", "explica la ciencia", "sin gluten",
     "masa muscular", "Hollywood", "el look que", "feminista","feminicida", "femicida", "incels", "incel", "aloe vera", "buen fin", "atole", "Atari",
-    "mejorar tu salud", "ingrediente de cocina", "bajar de peso", "controlar el azúcar", "violencia doméstica", "verificación vehicular", "la receta",
+    "mejorar tu salud", "ingrediente de cocina", "bajar de peso", "controlar el azúcar", "violencia doméstica", "verificación vehicular", "la receta", "Jóvenes Construyendo el Futuro",
     "Cómo preparar", "propiedades curativas", "Psicología", "NERDS", "Playstation", "streamer", "receta fácil", "salud mental", "riesgos para la salud",
     "efectiva hierba", "los nutrientes", "body positive", "Mi Beca para Empezar", "femicidio", "feminicidio", "feminil", "ponche", "memes", "eliminar la papada",
     "vitaminas secretas", "borrar arrugas", "rejuvenecer la piel", "dieta", "según un estudio", "remedio natural", "cine mexicano", "los científicos dicen", "recuerdos inolvidables",
@@ -68,7 +68,7 @@ window.forbiddenPhrases = [
     "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI", "violencia contra la mujer",
     "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento", "autoayuda", "sostenibilidad", "salud holística",
     "antioxidante", "limpia los riñones", "limpia los dientes", "rímel", "según un experto", "según expertos" ,"según los expertos", "combatir el frío", "truco de cocina", "mejores consejos", "vitamina B12", "según un especialista"
-    "según especialistas", "según los "
+    "según especialistas", "según los ", "REVIEW |", "conseguir boletos", "K-dramas", "licuado de ", "destapar arterias", "destapar las arterias", "deliciosa", "delicioso", "receta especial", "Filarmónica"
 ];
 
 window.dispatchEvent(new Event('forbiddenPhrasesLoaded'));
