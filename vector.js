@@ -1,74 +1,21 @@
 window.forbiddenPhrases = [
-    // Deportes
-    "Marion Reimers", "Santos Laguna", "Leagues Cup", "Champions League", "Águilas del América", "Pacquiao", "Selección de México",
-    "Cruz Azul", "Allan Saint-Maximim", "América vs", "Grand Prix", "Javier Aguirre", "octavos de final", "cuartos de final", "semifinal",
-    "André Jardine", "Canelo", "Netflix", "Gilberto Mora", "Apertura 2025", "vs", "Verstappen", "Guillermo del Toro", "FC Juárez",
-    "Fox Sports", "ESPN", "clavadista", "Messi", "Keylor Navas", "Xabi Alonso", "Jardine", "Julio César Chávez", "Bravos de Juárez",
-    "Real Madrid", "Club América", "All Stars", "Isaac del Toro", "Inter Miami", "Milito", "Piojo Herrera", "Saint-Maximin",
-    "Sofía Rivera Torres", "All-stars", "americanista", "Cristiano Ronaldo", "Maratón", "Efraín Juárez", "Cowboys", "NFL", "JJ Macías",
-    "Mundial 2026", "Checo Pérez", "José Ramón Fernández", "Martinoli", "Estadio", "Riquelme", "La Champions", "49ers", "Faitelson",
-    "FMS World Series", "Cruz Azul", "MLB", "Alexis Vega", "Chivas", "Tigres", "goleo", "liguilla", "Dodgers", "Serie Mundial",
-    "Rayados", "Barça", "Lamine", "Lamine Yamal", "Camp Nou", "futbol", "NBA", "selección mexicana", "América femenil",
-    "Fórmula 1", "F1", "fútbol", "Chicharito", "Liga MX", "torneo de", "Liga de", "Premier League", "Yankees", "Marlins", "Mets",
-    "Luis Fernando Tena", "Chiefs", "Ferrari", "escudería", "Clausura 2026", "Clausura 2025", "Patriots", "Bengals", "Mazatlán FC",
-    "Neymar Jr.", "La Liga", "Mundial Femenil", "Eurocopa", "Baseball", "Elías Montiel", "Real Oviedo", "Flamengo", "River Plate", "Bayer Leverkusen",
-    "Diablito Echeverri", "Los Pumas", "La Libertadores", "Palmeiras", "Marcelo Gallardo", "Pity Martínez", "Liverpoll", "Mac Allister", "Champions",
-    "Cholo Simeone", "Bielsa", "Fernando Gago", "Julián Álvarez", "Randy Arozarena", "Kang Tae Oh",
-    // Farándula
-    "Ibai", "Christian Nodal", "Ángela Aguilar", "Shakira", "Maluma", "Diego Cocca", "Nodal", "ángela aguilar", "Aguilar",
-    "Ángela Aguilar", "Aldo de Nigris", "Poncho de Nigris", "Kate del castillo", "Emiliano Aguilar", "familia Aguilar",
-    "los Aguilar", "dinastía Aguilar", "Facundo", "YosStop", "Luis R. Conriquez", "Angela Aguilar", "Miguel Padilla",
-    "Alexia Putellas", "Mariana Botas", "Aaron Mercury", "Loret de Mola", "Jeniffer Aniston", "Enrique Guzmán", "Tara Reid",
-    "Yolanda Andrade", "Verónica Castro", "Epstein", "Miguel Bosé", "Ninel Conde", "Brad Pitt", "Juan Gabriel", "Reina Sofía",
-    "Angelique Boyer", "Lupita D’Alessio", "Aleks Syntek", "Abelito", "Belinda", "Edwin Luna", "Eduardo Capetillo",
-    "Carolina Ross", "Fabiola Campomanes", "Raúl Rocha", "Nawat Itsaragrisil", "Fátima Bosch", "Hongjoong", "Manelyk",
-    "Ricardo Salinas", "Karely Ruiz", "Quentin Tarantino", "Florinda Meza", "Temach", "Lady Gaga", "Grupo Firme", "Jenni Rivera",
-    "Adrián Di Monte", "Sandra Itzel", "Jorge Cabajal", "Maribel Guardia", "Leonardo Aguilar", "Alex Marín", "Sofía Villalobos",
-    "Andrea Legarreta", "Galilea Montijo", "Livia Brito", "Emma Coronel", "Guana", "Susana Zabaleta", "Manelyk", "Matías Novoa",
-    "Natanael Cano", "Maite Perroni", "alimentos ultraprocesados", "Frida Kahlo", "El Buki", "'El Buki'", "Ester Expósito",
-    "Liam Neeson", "Paola Rojas", "Ingrid Coronado", "Thalía", "Sydney Sweeney", "Carlos Jiménez", "Sandra Cuevas", "The Beatles",
-    "Taylor Swift", "Bad Bunny", "Paco Stanley", "Cristian Castro", "Tom Holland", "C4Jimenez", "Martha Cristiana", "Blink-182",
-    "Dua Lipa", "Gustavo Adolfo Infante", "Ricardo Arjona", "Chespirito", "Inés Gómez Mont", "Otto Padrón", "Travis Barker",
-    "Adamari López", "Pokémon", "Katy Perry", "Wendy Guevara", "Fernando Colunga", "Silvia Pinal", "Angélica Vale",
-    "Pepe Aguilar", "David Faitelson", "Chumel Torres", "Fofo Márquez", "Esteban Macías", "Vanessa Guzmán", "Fuerza Regida",
-    "Carlos Rivera", "Jason Momoa", "Alfredo Adame", "Adame", "Ozzy Osbourne", "Rocío Robles", "Rosalía", "Javier Alarcón",
-    "Mujer Luna Bella", "Gomita", "Gala Montes", "Adrián Marcelo", "Brenda Bezares", "Rocío Durcal", "Zague", "Elizabeth Olsen",
-    "Mario Bezares", "Venga la Alegría", "Maryfer Centeno", "Mr Doctor", "Verástegui", "Laura Flores", "Lalo Salazar", "Elton John",
-    "Bárbara de Regil", "Ricardo Peralta", "Karen Barrera", "Cazzu", "Franco Escamilla", "Ivonne Montero", "Yeri Mua",
-    "Lapizito", "Luis Miguel", "Alana", "Adal Ramones", "Yordi Rosado", "Juan Collado", "Yadhira Carrillo", "Ancelotti", "Neymar",
-    "Eugenio Derbez","Aislinn Derbez", "Iñárritu", "Tom Cruise", "Chabelo", "Gabriela Michel", "The Hives", "Roberto Palazuelos",
-    "Beyoncé", "Selena Gomez", "Kim Kardashian", "Will Smith", "Drake", "Jennifer López", "Jennifer Lopez", "Alejandro Fernández",
-    "Eminem", "Slim Shady", "Martha Higareda", "J Balvin", "Scarlett Johansson", "Bellakath", "Johnny Depp", "China Suárez",
-    "Julieta Poggio","Moria Casán", "De Nigris",
-    // Plataformas sociales y plataformas
-    "Spotify", "Cinemex", "Tiktok", "HBO Max", "Disney", "TV Azteca", "PUBG", "Hitman",
-  
-    // Empresas
-    "Steam",
-    // Producciones audiovisuales
-    "Juego de Tronos", "Stranger Things", "Breaking Bad", "Black Mirror", "Genshin Impact", "Assasin's Creed", "Let It DIe",
-    "LCDLF", "LCDF", "TUDN", "Pixar", "La Casa de los Famosos", "La Academia", "Ubisoft", "The Witcher", "Fatal Fury", "WWE",
-    "Harry Potter", "MasterChef", "Imagen Televisión", "Las Estrellas", "LatinUS", "LCDLFMX", "La Más Draga",
-    "Chavo del 8", "Sale el sol", "Granja VIP", "Exatlón", "la mañanera", "Grammy", "Miss Universo",
-    // Frases/palabras molestas
-    "Clima HOY", "fifí", "chairo", "feminismo", "Horóscopo", "horóscopo", "lomito", "violación", "el perrito", "envejecimiento", "expertos",
-    "feministas", "infidelidad", "infiel", "trans", "transfobia", "reasignación de género", "metro", "depresión", "obesidad", "diabetes",
-    "relación sentimental", "viral", "infancias", "vegano", "violencia de género", "K-drama", "mal olor", "ecoactivismo", "un estudio", "venta de boletos",
-    "Rita Cetina", "Benito Juárez", "Capcom", "Globos de oro", "en cines", "postre", "antioxidantes", "reestreno", "en cines", "preventa de boletos",
-    "LGBT", "Influencer", "Bienestar", "Malditos NERDS", "Modo Capibara", "Capibara", "Mercomuna", "la perrita", "aromatizante natural",
-    "Whatsapp", "romance", "moda", "K-Pop", "iPhone", "Nintendo", "Mario Bros", "red flag", "secreto natural", "toque navideño", "autohipnosis",
-    "Fortnite", "Xbox", "Bienestar", "Según la IA", "calidad del aire", "Remedios caseros", "té de", "receta de", "explica la ciencia", "sin gluten",
-    "masa muscular", "Hollywood", "el look que", "feminista","feminicida", "femicida", "incels", "incel", "aloe vera", "buen fin", "atole", "Atari",
-    "mejorar tu salud", "ingrediente de cocina", "bajar de peso", "controlar el azúcar", "violencia doméstica", "verificación vehicular", "la receta", "Jóvenes Construyendo el Futuro",
-    "Cómo preparar", "propiedades curativas", "Psicología", "NERDS", "Playstation", "streamer", "receta fácil", "salud mental", "riesgos para la salud",
-    "efectiva hierba", "los nutrientes", "body positive", "Mi Beca para Empezar", "femicidio", "feminicidio", "feminil", "ponche", "memes", "eliminar la papada",
-    "vitaminas secretas", "borrar arrugas", "rejuvenecer la piel", "dieta", "según un estudio", "remedio natural", "cine mexicano", "los científicos dicen", "recuerdos inolvidables",
-    "Beca Rita Cetina", "Mujeres que Luchan", "femicidios", "feminicidios", "Gonzalo Guerrero", "Limpieza profunda", "Snack ideal", "videojuegos", "ejercicios fáciles",
-    "eliminar toxinas", "exceso de grasa acumulada", "hígado graso", "este alimento", "poderosa mezcla", "bálsamo casero", "Yoltlajtoli", "25N:", "25N?", "Jóvenes Escribiendo el futuro",
-    "dolor articular", "evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI", "violencia contra la mujer",
-    "Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento", "autoayuda", "sostenibilidad", "salud holística",
-    "antioxidante", "limpia los riñones", "limpia los dientes", "rímel", "según un experto", "según expertos" ,"según los expertos", "combatir el frío", "truco de cocina", "mejores consejos", "vitamina B12", "según un especialista",
-    "según especialistas", "según los ", "REVIEW |", "conseguir boletos", "K-dramas", "licuado de ", "destapar arterias", "destapar las arterias", "deliciosa", "delicioso", "receta especial", "Filarmónica"
+// Deportes
+"Marion Reimers", "Santos Laguna", "Leagues Cup", "Champions League", "Águilas del América", "Pacquiao", "Selección de México","Cruz Azul", "Allan Saint-Maximim", "América vs", "Grand Prix", "Javier Aguirre", "octavos de final", "cuartos de final", "semifinal","André Jardine", "Canelo", "Netflix", "Gilberto Mora", "Apertura 2025", "vs", "Verstappen", "Guillermo del Toro", "FC Juárez","Fox Sports", "ESPN", "clavadista", "Messi", "Keylor Navas", "Xabi Alonso", "Jardine", "Julio César Chávez", "Bravos de Juárez","Real Madrid", "Club América", "All Stars", "Isaac del Toro", "Inter Miami", "Milito", "Piojo Herrera", "Saint-Maximin","Sofía Rivera Torres", "All-stars", "americanista", "Cristiano Ronaldo", "Maratón", "Efraín Juárez", "Cowboys", "NFL", "JJ Macías","Mundial 2026", "Checo Pérez", "José Ramón Fernández", "Martinoli", "Estadio", "Riquelme", "La Champions", "49ers", "Faitelson","FMS World Series", "Cruz Azul", "MLB", "Alexis Vega", "Chivas", "Tigres", "goleo", "liguilla", "Dodgers", "Serie Mundial","Rayados", "Barça", "Lamine", "Lamine Yamal", "Camp Nou", "futbol", "NBA", "selección mexicana", "América femenil","Fórmula 1", "F1", "fútbol", "Chicharito", "Liga MX", "torneo de", "Liga de", "Premier League", "Yankees", "Marlins", "Mets","Luis Fernando Tena", "Chiefs", "Ferrari", "escudería", "Clausura 2026", "Clausura 2025", "Patriots", "Bengals", "Mazatlán FC","Neymar Jr.", "La Liga", "Mundial Femenil", "Eurocopa", "Baseball", "Elías Montiel", "Real Oviedo", "Flamengo", "River Plate","Bayer Leverkusen", "Diablito Echeverri", "Los Pumas", "La Libertadores", "Palmeiras", "Marcelo Gallardo", "Pity Martínez", "Liverpool", "Mac Allister", "Champions", "Cholo Simeone", "Bielsa", "Fernando Gago", "Julián Álvarez", "Randy Arozarena", "Kang Tae Oh",
+
+// Farándula
+"Ibai", "Christian Nodal", "Ángela Aguilar", "Shakira", "Maluma", "Diego Cocca", "Nodal", "ángela aguilar", "Aguilar","Ángela Aguilar", "Aldo de Nigris", "Poncho de Nigris", "Kate del castillo", "Emiliano Aguilar", "familia Aguilar","los Aguilar", "dinastía Aguilar", "Facundo", "YosStop", "Luis R. Conriquez", "Angela Aguilar", "Miguel Padilla", "Hailee Stenfield","Alexia Putellas", "Mariana Botas", "Aaron Mercury", "Loret de Mola", "Jeniffer Aniston", "Enrique Guzmán", "Tara Reid","Yolanda Andrade", "Verónica Castro", "Epstein", "Miguel Bosé", "Ninel Conde", "Brad Pitt", "Juan Gabriel", "Reina Sofía","Angelique Boyer", "Lupita D’Alessio", "Aleks Syntek", "Abelito", "Belinda", "Edwin Luna", "Eduardo Capetillo", "Chayanne","Carolina Ross", "Fabiola Campomanes", "Raúl Rocha", "Nawat Itsaragrisil", "Fátima Bosch", "Hongjoong", "Manelyk", "Hijo del Santo","Ricardo Salinas", "Karely Ruiz", "Quentin Tarantino", "Florinda Meza", "Temach", "Lady Gaga", "Grupo Firme", "Jenni Rivera","Adrián Di Monte", "Sandra Itzel", "Jorge Cabajal", "Maribel Guardia", "Leonardo Aguilar", "Alex Marín", "Sofía Villalobos","Andrea Legarreta", "Galilea Montijo", "Livia Brito", "Emma Coronel", "Guana", "Susana Zabaleta", "Manelyk", "Matías Novoa","Natanael Cano", "Maite Perroni", "alimentos ultraprocesados", "Frida Kahlo", "El Buki", "'El Buki'", "Ester Expósito", "Lucía Méndez","Liam Neeson", "Paola Rojas", "Ingrid Coronado", "Thalía", "Sydney Sweeney", "Carlos Jiménez", "Sandra Cuevas", "The Beatles","Taylor Swift", "Bad Bunny", "Paco Stanley", "Cristian Castro", "Tom Holland", "C4Jimenez", "Martha Cristiana", "Blink-182","Dua Lipa", "Gustavo Adolfo Infante", "Ricardo Arjona", "Chespirito", "Inés Gómez Mont", "Otto Padrón", "Travis Barker","Adamari López", "Pokémon", "Katy Perry", "Wendy Guevara", "Fernando Colunga", "Silvia Pinal", "Angélica Vale", "Pedro Infante","Jorge Negrete", "Pepe Aguilar", "David Faitelson", "Chumel Torres", "Fofo Márquez", "Esteban Macías", "Vanessa Guzmán","Fuerza Regida", "Carlos Rivera", "Jason Momoa", "Alfredo Adame", "Adame", "Ozzy Osbourne", "Rocío Robles", "Rosalía", "Javier Alarcón","Mujer Luna Bella", "Gomita", "Gala Montes", "Adrián Marcelo", "Brenda Bezares", "Rocío Durcal", "Zague", "Elizabeth Olsen","Mario Bezares", "Venga la Alegría", "Maryfer Centeno", "Mr Doctor", "Verástegui", "Laura Flores", "Lalo Salazar", "Elton John","Bárbara de Regil", "Ricardo Peralta", "Karen Barrera", "Cazzu", "Franco Escamilla", "Ivonne Montero", "Yeri Mua","Lapizito", "Luis Miguel", "Alana", "Adal Ramones", "Yordi Rosado", "Juan Collado", "Yadhira Carrillo", "Ancelotti", "Neymar","Eugenio Derbez","Aislinn Derbez", "Iñárritu", "Tom Cruise", "Chabelo", "Gabriela Michel", "The Hives", "Roberto Palazuelos","Beyoncé", "Selena Gomez", "Kim Kardashian", "Will Smith", "Drake", "Jennifer López", "Jennifer Lopez", "Alejandro Fernández","Eminem", "Slim Shady", "Martha Higareda", "J Balvin", "Scarlett Johansson", "Bellakath", "Johnny Depp", "China Suárez","Julieta Poggio","Moria Casán", "De Nigris", "Altagracia Gómez", "Carlos III", "Rey Carlos", "Carolina Herrera",
+
+// Plataformas sociales y plataformas
+"Spotify", "Cinemex", "Tiktok", "HBO Max", "Disney", "TV Azteca", "PUBG", "Hitman",
+
+// Empresas
+"Steam",
+
+// Producciones audiovisuales
+"Juego de Tronos", "Stranger Things", "Breaking Bad", "Black Mirror", "Genshin Impact", "Assasin's Creed", "Let It DIe","LCDLF", "LCDF", "TUDN", "Pixar", "La Casa de los Famosos", "La Academia", "Ubisoft", "The Witcher", "Fatal Fury", "WWE","Harry Potter", "MasterChef", "Imagen Televisión", "Las Estrellas", "LatinUS", "LCDLFMX", "La Más Draga","Chavo del 8", "Sale el sol", "Granja VIP", "Exatlón", "la mañanera", "Grammy", "Miss Universo",
+
+// Frases/palabras molestas
+"Clima HOY", "fifí", "chairo", "feminismo", "Horóscopo", "horóscopo", "lomito", "violación", "el perrito", "envejecimiento","se vuelve viral", "feministas", "infidelidad", "infiel", "trans", "transfobia", "reasignación de género", "metro", "depresión","diabetes", "divorcio", "relación sentimental", "viral", "infancias", "vegano", "violencia de género", "K-drama", "mal olor","un estudio", "venta de boletos", "Rita Cetina", "Benito Juárez", "Capcom", "Globos de oro", "en cines", "postre", "antioxidantes", "en cines", "preventa de boletos", "LGBT", "Influencer", "Bienestar", "Malditos NERDS", "Modo Capibara", "Capibara", "Mercomuna","aromatizante natural", "se vuelven virales", "Whatsapp", "romance", "moda", "K-Pop", "iPhone", "Nintendo", "Mario Bros", "red flag", "toque navideño", "autohipnosis", "mejores series", "Fortnite", "Xbox", "Bienestar", "Según la IA", "calidad del aire", "según los ","receta de", "explica la ciencia", "sin gluten", "masa muscular", "Hollywood", "el look que", "feminista","feminicida", "femicida","aloe vera", "buen fin", "atole", "Atari", "mejorar tu salud", "ingrediente de cocina", "bajar de peso", "controlar el azúcar","verificación vehicular", "la receta", "Jóvenes Construyendo el Futuro", "Cómo preparar", "propiedades curativas", "Psicología","streamer", "receta fácil", "salud mental", "riesgos para la salud", "efectiva hierba", "los nutrientes", "body positive", "femicidio", "feminicidio", "feminil", "ponche", "memes", "eliminar la papada", "vitaminas secretas", "borrar arrugas","según un estudio", "remedio natural", "cine mexicano", "los científicos dicen", "recuerdos inolvidables", "Beca Rita Cetina","feminicidios", "Gonzalo Guerrero", "Limpieza profunda", "Snack ideal", "videojuegos", "ejercicios fáciles", "eliminar toxinas","exceso de grasa acumulada",  "la perrita",  "autoayuda", "sostenibilidad",  "violencia contra la mujer",  "dolor articular", "dieta","Mujeres que Luchan", "femicidios", "secreto natural", "Playstation", "reestreno",  "obesidad",  "ecoactivismo",  "expertos", "incel","hígado graso", "este alimento", "poderosa mezcla", "bálsamo casero", "Yoltlajtoli", "25N:", "25N?", "Jóvenes Escribiendo el futuro","evitar lesiones", "colesterol", "proteger el hígado", "alimentación saludable", "LEGO", "Marvel", "Avengers", "anime", "ISEKAI","Gertrudis Bocanegra", "Red Bull", "25N", "25 de Noviembre","Ciberacoso", "discriminación", "cambio climático", "emprendimiento","salud holística", "antioxidante", "limpia los riñones", "limpia los dientes", "rímel", "según un experto", "según expertos" ,"combatir el frío", "truco de cocina", "mejores consejos", "vitamina B12", "según un especialista", "según especialistas","conseguir boletos", "K-dramas", "licuado de ", "destapar arterias", "destapar las arterias", "deliciosa", "delicioso","receta especial", "Filarmónica", "violencia doméstica","REVIEW |", "té de","Mi Beca para Empezar", "incels", "NERDS","según los expertos","rejuvenecer la piel", "Remedios caseros"
 ];
 
 window.dispatchEvent(new Event('forbiddenPhrasesLoaded'));
