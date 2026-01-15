@@ -11,6 +11,9 @@ window.forbiddenPhrases = [
 // Empresas
 "Steam", "Movistar",
 
+  // 
+  "harry styles", "BTS", "Vanessa Labios", "Shanik Berman", "Henry Martín"",
+
 // Producciones audiovisuales
 "Juego de Tronos", "Stranger Things", "Resident Evil", "Breaking Bad", "Dragon Ball", "Black Mirror", "Genshin Impact", "¿Quién es la Máscara?", "¿Quién es la Máscara?:", "Assasin's Creed", "Let It DIe","LCDLF", "LCDF", "TUDN", "Pixar", "La Casa de los Famosos", "La Academia", "Ubisoft", "The Witcher", "Fatal Fury", "WWE","Harry Potter", "MasterChef", "Imagen Televisión", "Las Estrellas", "LatinUS", "LCDLFMX", "La Más Draga","Chavo del 8", "Sale el sol", "Granja VIP", "Exatlón", "la mañanera", "Grammy", "Miss Universo",
 
