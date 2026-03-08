@@ -15,6 +15,7 @@ window.forbiddenPhrases = [
 "harry styles", "BTS", "TicketMaster", "Vanessa Labios", "Shanik Berman", "Henry Martín", "tiktoker", "La Nicholette", "kenia os", "Victoria Ruffo", "Paty Navidad", "Pati Chapoy",
 "Athletic Club", "Álex Padilla", "Marco Chacón", "Imelda Tuñón", "Rossana Nájera", "Lily Márquez", "Edith Márquez", "Nagibe Abudd", "Julián Figueroa", "mascarilla casera", "piel sensible",
 "piel grasosa", "jugo de limón", "propiedades medicinales", "Día de la amistad", "pasta de dientes", "blanquear tu sonrisa", "limpio y fresco",
+"8M", "8 de marzo", "género", "Marcha 8m", "Olimpia", "la primera mujer", "Día Internacional de la mujer", "Día Internacional del hombre", "igualdad salarial", "color morado", "romántico", "techo de cristal", "Generación Z", "Jesse & Joy", "menstruación",  "Erik Rubín", "nueva novia", "nuevo novio", "nueva pareja", "Jessica Alba", "violencia contra la mujer", "austeridad republicana", "XV años",
 
 // Producciones audiovisuales
 "Juego de Tronos", "Stranger Things", "Resident Evil", "Breaking Bad", "Dragon Ball", "Black Mirror", "Genshin Impact", "¿Quién es la Máscara?", "¿Quién es la Máscara?:", "Assasin's Creed", "Let It DIe","LCDLF", "LCDF", "TUDN", "Pixar", "La Casa de los Famosos", "La Academia", "Ubisoft", "The Witcher", "Fatal Fury", "WWE","Harry Potter", "MasterChef", "Imagen Televisión", "Las Estrellas", "LatinUS", "LCDLFMX", "La Más Draga","Chavo del 8", "Sale el sol", "Granja VIP", "Exatlón", "la mañanera", "Grammy", "Miss Universo",
