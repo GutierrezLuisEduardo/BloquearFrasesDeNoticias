@@ -2,7 +2,7 @@
 // @name         Infobae Phrase Blocking - Mejorado
 // @namespace    http://tampermonkey.net/
 // @version      1.4
-// @description  Oculta noticias de Infobae que contengan palabras/frases prohibidas (detecta incluso pegadas a puntuación)
+// @description  Oculta noticias de Infobae que contengan frases prohibidas (palabras completas + puntuación adyacente permitida)
 // @match        *://*.infobae.com/*
 // @grant        none
 // @require      https://raw.githubusercontent.com/GutierrezLuisEduardo/BloquearFrasesDeNoticias/refs/heads/main/vector.js
@@ -12,10 +12,8 @@
 (function () {
     'use strict';
 
-    // Espera a que vector.js cargue las frases
     window.addEventListener('forbiddenPhrasesLoaded', initBlocker);
 
-    // Por si ya están cargadas antes (raro, pero por si acaso)
     if (window.forbiddenPhrases && Array.isArray(window.forbiddenPhrases)) {
         initBlocker();
     }
@@ -26,65 +24,73 @@
 
         console.log(`Bloqueador activado - ${window.forbiddenPhrases.length} frases prohibidas cargadas`);
 
-        // Caracteres que permitimos antes y después de la frase (sin necesidad de espacio)
-        const punctuation = `["'¡¿:(),.!?¿¡\\-–—:;]`;
+        // Caracteres de puntuación/separación que permitimos pegados a la frase
+        const punctuation = `"'.,!?¡¿:();-–—…`.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'); // escapamos para regex
 
-        // Creamos regex que detecta la frase aunque esté pegada a puntuación
+        // Regex base: permite 0 o más puntuaciones antes y después, pero no letras/números pegados
         const forbiddenRegexes = window.forbiddenPhrases.map(phrase => {
             const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            // Detecta la frase completa, permitiendo puntuación o espacios alrededor
-            return new RegExp(
-                `(?:^|[\\s${punctuation}]+)${escaped}(?:[\\s${punctuation}]+|$)`,
-                'i'
-            );
+            // \b o puntuación al inicio, lo mismo al final
+            return new RegExp(`(?:^|[${punctuation}\\s])${escaped}(?:[${punctuation}\\s]|$)`, 'i');
         });
 
-        // Selectores para encontrar posibles contenedores de noticias / titulares
+        // Selectores más actualizados y amplios para Infobae 2025-2026
         const containerSelectors = [
             'article',
             '[class*="card"]',
             '[class*="story"]',
-            '[class*="item"]',
-            '[class*="post"]',
+            '[class*="feed__item"]',
+            '[class*="nd-"]',           // muy común: nd1, nd-feed, etc.
+            '.article-item',
+            '.card__content',
+            '.story-card',
             '[class*="headline"]',
+            '[class*="title"]',
             'a[href*="/"][class*="link"]',
-            '.nd1, .nd2, .nd3, .nd4',
-            '[data-testid*="headline"]',
-            '[data-article-id]',
-            'div[class*="teaser"]',
-            'div[class*="noticia"]'
+            '[data-testid*="card"]',
+            '[data-article-id]'         // a veces usan data attributes
         ].join(',');
 
-        function getHeadlineText(element) {
-            // Intentamos obtener el texto más probable del titular
-            const selectors = [
+        function hideIfForbidden(container) {
+            // Buscamos texto en elementos probables de titular
+            const headlineCandidates = container.querySelectorAll([
                 'h1', 'h2', 'h3', 'h4',
-                '[class*="title"]', '[class*="headline"]',
-                '[class*="titulo"]', '[class*="h1"]', '[class*="h2"]',
-                'a', 'span[class*="title"]'
-            ];
+                '[class*="title"]',
+                '[class*="headline"]',
+                '[class*="titulo"]',
+                '.card__title',
+                '.feed__title',
+                '.nd-headline'
+            ].join(','));
 
-            for (const sel of selectors) {
-                const found = element.querySelector(sel);
-                if (found && found.textContent.trim()) {
-                    return found.textContent.trim();
+            let text = '';
+
+            // Tomamos el primer elemento con texto significativo
+            for (const el of headlineCandidates) {
+                const t = el.textContent.trim();
+                if (t.length > 10) {   // evitamos breadcrumbs o textos muy cortos
+                    text = t;
+                    break;
                 }
             }
 
-            // Último recurso: todo el texto del contenedor
-            return element.textContent.trim() || '';
-        }
+            // Fallback: todo el texto del contenedor (menos preciso pero útil)
+            if (!text) {
+                text = container.textContent.trim();
+            }
 
-        function hideIfForbidden(container) {
-            const text = getHeadlineText(container);
             if (!text) return;
 
-            if (forbiddenRegexes.some(regex => regex.test(text))) {
-                // Ocultamos el contenedor más razonable
-                const toHide = container.closest('article') ||
-                              container.closest('[class*="card"]') ||
-                              container.closest('div') ||
-                              container;
+            const hasForbidden = forbiddenRegexes.some(regex => regex.test(text));
+
+            if (hasForbidden) {
+                // Ocultamos el contenedor más específico posible
+                let toHide = container.closest('article') ||
+                             container.closest('[class*="card"]') ||
+                             container.closest('[class*="story"]') ||
+                             container.closest('[class*="feed"]') ||
+                             container.closest('div') ||
+                             container;
 
                 if (toHide && toHide.style.display !== 'none') {
                     toHide.style.display = 'none';
@@ -94,7 +100,7 @@
                     toHide.style.padding = '0';
                     toHide.style.overflow = 'hidden';
 
-                    console.log('Noticia bloqueada:', text.substring(0, 90) + (text.length > 90 ? '...' : ''));
+                    console.log('Noticia bloqueada:', text.substring(0, 70) + (text.length > 70 ? '...' : ''));
                 }
             }
         }
@@ -103,16 +109,18 @@
             document.querySelectorAll(containerSelectors).forEach(hideIfForbidden);
         }
 
-        // Ejecutamos varias veces porque Infobae carga contenido dinámico
+        // Ejecutamos varias veces por lazy loading de Infobae
         scanAndBlock();
         setTimeout(scanAndBlock, 1200);
-        setTimeout(scanAndBlock, 3000);
-        setTimeout(scanAndBlock, 6000);
-        setTimeout(scanAndBlock, 10000);
+        setTimeout(scanAndBlock, 3500);
+        setTimeout(scanAndBlock, 7000);
+        setTimeout(scanAndBlock, 12000);
 
-        // Observer para contenido que se carga después (scroll infinito, lazy load, etc.)
-        const observer = new MutationObserver(() => {
-            scanAndBlock();
+        // Observer para contenido dinámico (scroll infinito, etc.)
+        const observer = new MutationObserver((mutations) => {
+            if (mutations.some(m => m.addedNodes.length > 0)) {
+                scanAndBlock();
+            }
         });
 
         observer.observe(document.body, {
