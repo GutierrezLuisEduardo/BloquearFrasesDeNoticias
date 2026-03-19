@@ -9,8 +9,7 @@ window.forbiddenPhrases = [
 "Spotify", "Cinemex", "Tiktok", "HBO Max", "Disney", "TV Azteca", "PUBG", "Hitman", "Fox Sports", "ESPN", "Leagues Cup", "Champions League", "Grand Prix", "Netflix", "FMS World Series",
 
 // Empresas
-"Steam", "Movistar","antonio mohamed", "Bárbara Mori", "alcoholismo", "Eduin Caz", "La Güereja", "rey", "Felipe VI", "Ventaneando", "reina",
-
+"Steam", "Movistar", "antonio mohamed", "Bárbara Mori", "alcoholismo", "Eduin Caz", "La Güereja", "rey", "Felipe VI", "Ventaneando", "reina",
 // 
 "harry styles", "BTS", "TicketMaster", "Vanessa Labios", "Shanik Berman", "Henry Martín", "tiktoker", "La Nicholette", "kenia os", "Victoria Ruffo", "Paty Navidad", "Pati Chapoy",
 "christina aguilera", "concierto", "mauricio ochmann", "estrenos",
