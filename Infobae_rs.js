@@ -5,7 +5,7 @@
 // @description  Oculta noticias de Infobae que contengan frases prohibidas (palabras completas + puntuación adyacente)
 // @match        *://*.infobae.com/*
 // @grant        none
-// @require      https://raw.githubusercontent.com/GutierrezLuisEduardo/BloquearFrasesDeNoticias/refs/heads/main/vector.jsss
+// @require      https://raw.githubusercontent.com/GutierrezLuisEduardo/BloquearFrasesDeNoticias/refs/heads/main/vector.js
 // @run-at       document-idle
 // ==/UserScript==
 
